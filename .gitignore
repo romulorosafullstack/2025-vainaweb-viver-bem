@@ -1,0 +1,26 @@
+# Generated CSS files from Sass
+*.css
+*.css.map
+
+# Sass cache directory
+.sass-cache/
+
+# Node.js modules (if using a JavaScript project)
+node_modules/
+
+# Build or distribution directories (if applicable)
+dist/
+build/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
