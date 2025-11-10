@@ -72,5 +72,3 @@ document.querySelector('#app').innerHTML = `
     </div>
   </Footer>
 `
-
-setupCounter(document.querySelector('#counter'))
