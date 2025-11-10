@@ -1,37 +1,58 @@
-@use '../mixins';
+//@use '@/styles/mixins' as mix;
+@use '../mixins' as mix;
+@use '@/styles/variables' as vars;
 
 .header{
   &-wrapper{
-    border: 2px solid red;
-    width: 100vw;
+    background: url("../../../public/images/header-bg.png") no-repeat;
+    background-size: contain;
     display: flex;
+    height: 573px;
     justify-content: center;
+    padding: 6.3rem 0;
+    width: 100vw;
   }
 
   &-content{
     width: 100%;
     max-width: 1280px;
-    border: 2px solid blue;
   }
 
-  &-bar-wrapper{
-    width: 100vw;
-  }
 
-    &-bar-content{
-    width: 118px;
-    height: 57px;
-    background: linear-gradient(to right, #4247A2 0%, #52B095 100%);
+  &-bar-content{
+    display: flex;
+    width: 111.8rem;
+    height: 5.7rem;
+    background: linear-gradient(to right, vars.$c-blue-4 0%, vars.$c-green-3 100%);
+    border-radius: 5rem;
+    padding: 0 5rem;
+    gap: 10rem;
   }
 
   &-logo-wrapper{
-    width: 19.1rem;
-    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    width: 16.12rem;
+    height: 5.7rem;
   }
 
   &-logo-img{
-    @mixin img-replacement(url("./icons/logo-viver-bem.svg"));
-    width: 100%;
-    height: auto;
+    @include mix.img-replacement(url("../../../public/icons/logo-viver-bem.svg"), 3.8rem);
+  }
+
+  &-nav-list{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    margin-left: 16rem;
+    gap: 5rem;
+  }
+
+  &-nav-link{
+    color: vars.$c-white;
+    font-family: vars.$f-family-2;
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
   }
 }
