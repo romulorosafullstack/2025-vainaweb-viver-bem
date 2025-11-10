@@ -1,0 +1,29 @@
+@mixin flex-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-r-lc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-c-lc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flex-c-cc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($prop: all, $time: 0.3s) {
+  transition: $prop $time ease;
+}
