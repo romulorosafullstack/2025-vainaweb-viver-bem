@@ -6,7 +6,9 @@ document.querySelector('#app').innerHTML = `
       <div class="header-bar-wrapper">
         <div class="header-bar-content">
           <div class="header-logo-wrapper">
-            Logo
+            <h1 class="header-logo-img">
+              Viver Bem
+            </h1>
           </div>
           <nav class="header-nav-wrapper">
             <ul class="header-nav-list">
