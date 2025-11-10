@@ -27,3 +27,15 @@
 @mixin transition($prop: all, $time: 0.3s) {
   transition: $prop $time ease;
 }
+
+@mixin img-replacement($image) {
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+}
