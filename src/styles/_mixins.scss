@@ -28,14 +28,17 @@
   transition: $prop $time ease;
 }
 
-@mixin img-replacement($image) {
+@mixin img-replacement($image,$height) {
+  display: flex;
   text-indent: -9999px;
   overflow: hidden;
-  text-align: left;
 
   background: {
     image: $image;
     repeat: no-repeat;
-    position: $x $y;
+    size: cover;
   }
+
+  width: 100%;
+  height: $height;
 }
