@@ -1,0 +1,37 @@
+@use '../mixins';
+
+.header{
+  &-wrapper{
+    border: 2px solid red;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-content{
+    width: 100%;
+    max-width: 1280px;
+    border: 2px solid blue;
+  }
+
+  &-bar-wrapper{
+    width: 100vw;
+  }
+
+    &-bar-content{
+    width: 118px;
+    height: 57px;
+    background: linear-gradient(to right, #4247A2 0%, #52B095 100%);
+  }
+
+  &-logo-wrapper{
+    width: 19.1rem;
+    height: 4.5rem;
+  }
+
+  &-logo-img{
+    @mixin img-replacement(url("./icons/logo-viver-bem.svg"));
+    width: 100%;
+    height: auto;
+  }
+}
